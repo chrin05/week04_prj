@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog_4</title>
+</head>
+<body>
+  <h1>슬기로운 코딩생활 4주차 BLOG</h1>
+
+  {% for p in post_list %}
+  <hr/>
+  <h2>{{ p.title }}</h2>
+  <h5>{{ p.created_at }}</h5>
+  <p>{{ p.content }}</p>
+  {% endfor %}
+
+</body>
+</html>
