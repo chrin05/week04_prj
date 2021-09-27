@@ -15,4 +15,4 @@ class Post(models.Model):
         return f'{self.pk}) {self.title} - {self.subtitle}'
 
     def get_absolute_url(self):
-        return f'/blog/{self.pk}/'
+        return f'/blog_4/{self.pk}/'

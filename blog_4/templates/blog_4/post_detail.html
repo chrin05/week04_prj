@@ -2,16 +2,16 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>{{ post.pk }}) {{ post.title }} - BLOG</title>
+    <title>{{ post.title }} - BLOG</title>
 </head>
 <body>
-  <div container>
-      <nav>
-          <a href="/blog/">Go to BLOG</a>
-      </nav>
-  </div>
 
-    <h1><a href="{{ p.get_absolute_url }}">{{ post.title }}</a></h1>
+    <nav>
+          <a href="/blog_4/">Go to BLOG</a>
+    </nav>
+
+
+    <h1>{{ post.title }}</h1>
     <h4>- {{ post.subtitle }}</h4>
     <h5>{{ post.created_at }}</h5>
     <p>{{ post.content }}</p>
